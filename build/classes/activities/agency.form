@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -55,7 +55,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="771" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="904" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -291,7 +291,6 @@
                 <EmptyBorder bottom="50" left="50" right="50" top="50"/>
               </Border>
             </Property>
-            <Property name="alignmentX" type="float" value="0.5"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -322,17 +321,21 @@
                                       <Component id="inputemailTF" linkSize="2" pref="0" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="inputgstinTF" linkSize="2" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="inputamountTF" linkSize="2" min="-2" pref="71" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="inputemaillabel" linkSize="2" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="inputgstinlabel" linkSize="2" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="inputamountlabel" linkSize="2" min="-2" pref="37" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <Component id="jLabel1" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -349,12 +352,14 @@
                           <Component id="inputgstinlabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="inputemaillabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="inputnamelabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="inputamountlabel" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="inputnameTF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="inputemailTF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="inputgstinTF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="inputamountTF" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -386,14 +391,20 @@
                 <Component class="javax.swing.JTable" name="agencytable">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                      <Table columnCount="3" rowCount="0">
+                      <Table columnCount="4" rowCount="0">
                         <Column editable="true" title="Name" type="java.lang.Object"/>
                         <Column editable="true" title="Email ID" type="java.lang.Object"/>
                         <Column editable="true" title="GSTIN" type="java.lang.Object"/>
+                        <Column editable="true" title="amount" type="java.lang.Object"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                       <TableColumnModel selectionModel="0">
+                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                          <Title/>
+                          <Editor/>
+                          <Renderer/>
+                        </Column>
                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                           <Title/>
                           <Editor/>
@@ -468,6 +479,13 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Add New Agency"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="inputamountlabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enter amount"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="inputamountTF">
             </Component>
           </SubComponents>
         </Container>
